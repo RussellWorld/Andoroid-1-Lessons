@@ -10,8 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private final Calculation calculation = new Calculation();
+    private final String keyCalculation = "Calculation";
     private TextView calculator;
+    private Calculation calculation = new Calculation();
     private Button button0;
     private Button button1;
     private Button button2;
@@ -31,11 +32,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button buttonPer;
     private Button buttonClear;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initViews();
+    }
+
+    protected void onSaveInstanceState(Bundle saveInstanceState) {
+        super.onSaveInstanceState(saveInstanceState);
+        saveInstanceState.putSerializable(keyCalculation, calculation);
+    }
+
+    protected void onRestoreInstanceState(Bundle saveInstanceState){
+        super.onRestoreInstanceState(saveInstanceState);
+        calculation = (Calculation) saveInstanceState.getSerializable(keyCalculation);
+
     }
 
     @Override

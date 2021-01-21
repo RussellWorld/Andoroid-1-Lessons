@@ -1,10 +1,11 @@
 package com.example.andoroidonelessons;
 
+import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class Calculation {
+public class Calculation implements Serializable {
     private final String number0 = "0";
     private final String number1 = "1";
     private final String number2 = "2";

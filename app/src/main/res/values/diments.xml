@@ -5,7 +5,7 @@
     <dimen name="inset_0">0dp</dimen>
     <dimen name="button_equally_0dp">0dp</dimen>
     <dimen name="inset_5">5dp</dimen>
-    <dimen name="textsize_32">32sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
     <dimen name="calc_0dp">0dp</dimen>
     <dimen name="calc_margin_25dp">25dp</dimen>
 </resources>

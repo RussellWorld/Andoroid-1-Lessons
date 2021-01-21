@@ -35,7 +35,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_8"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number7"
@@ -47,7 +47,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_7"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number9"
@@ -59,7 +59,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_9"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/symbol_div"
@@ -73,7 +73,7 @@
             android:gravity="center"
             android:text="@string/symbol_div"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
 
     </LinearLayout>
@@ -93,7 +93,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_4"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number5"
@@ -105,7 +105,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_5"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number6"
@@ -117,7 +117,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_6"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/symbol_mul"
@@ -131,7 +131,7 @@
             android:gravity="center"
             android:text="@string/symbol_mul"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32"
+            android:textSize="@dimen/text_size_32"
 
             />
 
@@ -153,7 +153,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_1"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number2"
@@ -165,7 +165,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_2"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number3"
@@ -177,7 +177,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_3"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/symbol_min"
@@ -191,7 +191,7 @@
             android:gravity="center"
             android:text="@string/symbol_minus"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
 
     </LinearLayout>
@@ -213,7 +213,7 @@
             android:gravity="center"
             android:text="@string/symbol_percent"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/number0"
@@ -225,7 +225,7 @@
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:gravity="center"
             android:text="@string/num_0"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/symbol_poi"
@@ -238,7 +238,7 @@
             android:gravity="center"
             android:text="@string/symbol_point"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/symbol_plus"
@@ -252,7 +252,7 @@
             android:gravity="center"
             android:text="@string/symbol_plus"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
     </LinearLayout>
 
@@ -271,7 +271,7 @@
             android:backgroundTint="@color/shadow_red"
             android:gravity="center"
             android:text="@string/symbol_c"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
         <Button
             android:id="@+id/symbol_equ"
@@ -285,7 +285,7 @@
             android:gravity="center"
             android:text="@string/symbol_equally"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/textsize_32" />
+            android:textSize="@dimen/text_size_32" />
 
     </LinearLayout>
 </LinearLayout>
