@@ -13,4 +13,17 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="MyCoolStyle" parent="Theme.AndroidOneLessons">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">@dimen/width_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
 </resources>

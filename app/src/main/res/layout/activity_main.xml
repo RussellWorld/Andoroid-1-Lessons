@@ -25,55 +25,32 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number8"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_8"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number7"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_7"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number9"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_9"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_div"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_marginEnd="@dimen/margin_button_end"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
+            android:layout_marginEnd="@dimen/margin"
             android:backgroundTint="@color/shadow_white"
             android:gravity="center"
             android:text="@string/symbol_div"
-            android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32" />
+            android:textColor="@color/shadow_brown" />
 
 
     </LinearLayout>
@@ -83,56 +60,31 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_4"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number5"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_5"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number6"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_6"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_mul"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_marginEnd="@dimen/margin_button_end"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
+            android:layout_marginEnd="@dimen/margin"
             android:backgroundTint="@color/shadow_white"
-            android:gravity="center"
             android:text="@string/symbol_mul"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32"
-
             />
 
     </LinearLayout>
@@ -142,56 +94,31 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number1"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_1"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number2"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_2"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number3"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_3"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_min"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_marginEnd="@dimen/margin_button_end"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
+            android:layout_marginEnd="@dimen/margin"
             android:backgroundTint="@color/shadow_white"
-            android:gravity="center"
             android:text="@string/symbol_minus"
-            android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32" />
+            android:textColor="@color/shadow_brown" />
 
 
     </LinearLayout>
@@ -202,57 +129,33 @@
         android:layout_gravity="center"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_per"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/shadow_white"
-            android:gravity="center"
             android:text="@string/symbol_percent"
-            android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32" />
+            android:textColor="@color/shadow_brown" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number0"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/cardview_shadow_start_color"
-            android:gravity="center"
-            android:text="@string/num_0"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/num_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_poi"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/shadow_white"
-            android:gravity="center"
             android:text="@string/symbol_point"
-            android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32" />
+            android:textColor="@color/shadow_brown" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_plus"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_marginEnd="@dimen/margin_button_end"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
+            android:layout_marginEnd="@dimen/margin"
             android:backgroundTint="@color/shadow_white"
-            android:gravity="center"
             android:text="@string/symbol_plus"
-            android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32" />
+            android:textColor="@color/shadow_brown" />
 
     </LinearLayout>
 
@@ -261,31 +164,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_clear"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_weight="1"
+            style="@style/MyCoolStyle"
             android:backgroundTint="@color/shadow_red"
-            android:gravity="center"
-            android:text="@string/symbol_c"
-            android:textSize="@dimen/text_size_32" />
+            android:text="@string/symbol_c" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_equ"
-            android:layout_width="@dimen/button_equally_0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_button_start"
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_marginEnd="@dimen/margin_button_end"
+            style="@style/MyCoolStyle"
+            android:layout_width="0dp"
             android:layout_weight="3"
             android:backgroundTint="@color/shadow_white"
-            android:gravity="center"
             android:text="@string/symbol_equally"
             android:textColor="@color/shadow_brown"
-            android:textSize="@dimen/text_size_32" />
+            android:layout_marginEnd="@dimen/margin" />
 
     </LinearLayout>
 </LinearLayout>

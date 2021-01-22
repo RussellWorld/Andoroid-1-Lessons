@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="textcalc_25sp">65sp</dimen>
-    <dimen name="width_0dp">0dp</dimen>
-    <dimen name="margin_button_start">10dp</dimen>
-    <dimen name="margin_button_top">10dp</dimen>
-    <dimen name="margin_button_end">10dp</dimen>
-    <dimen name="layout_padding">15dp</dimen>
-</resources>
