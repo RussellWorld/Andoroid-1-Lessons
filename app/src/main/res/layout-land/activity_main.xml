@@ -4,12 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    android:padding="@dimen/layout_padding_15">
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+    android:padding="@dimen/layout_padding_20">
 
     <TextView
         android:id="@+id/calc"
@@ -26,27 +21,33 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/symbol_clear"
+            style="@style/MyCoolStyle_horizontal"
+            android:layout_marginStart="@dimen/margin_start_100"
+            android:backgroundTint="@color/shadow_red"
+            android:text="@string/symbol_c" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number8"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number7"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number9"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_9" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_div"
-            style="@style/MyCoolStyle"
-            android:layout_marginEnd="@dimen/margin"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/shadow_white"
             android:gravity="center"
             android:text="@string/symbol_div"
@@ -61,31 +62,38 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/symbol_per"
+            style="@style/MyCoolStyle_horizontal"
+            android:layout_marginStart="@dimen/margin_start_100"
+            android:backgroundTint="@color/shadow_white"
+            android:text="@string/symbol_percent"
+            android:textColor="@color/shadow_brown" />
+
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number4"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number5"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number6"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_6" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_mul"
-            style="@style/MyCoolStyle"
-            android:layout_marginEnd="@dimen/margin"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/shadow_white"
             android:text="@string/symbol_mul"
-            android:textColor="@color/shadow_brown"
-            />
+            android:textColor="@color/shadow_brown" />
 
     </LinearLayout>
 
@@ -95,27 +103,35 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/symbol_poi"
+            style="@style/MyCoolStyle_horizontal"
+            android:layout_marginStart="@dimen/margin_start_100"
+            android:backgroundTint="@color/shadow_white"
+            android:text="@string/symbol_point"
+            android:textColor="@color/shadow_brown" />
+
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/number1"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number2"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/number3"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/cardview_shadow_start_color"
             android:text="@string/num_3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_min"
-            style="@style/MyCoolStyle"
-            android:layout_marginEnd="@dimen/margin"
+            style="@style/MyCoolStyle_horizontal"
             android:backgroundTint="@color/shadow_white"
             android:text="@string/symbol_minus"
             android:textColor="@color/shadow_brown" />
@@ -129,57 +145,31 @@
         android:layout_gravity="center"
         android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/symbol_per"
-            style="@style/MyCoolStyle"
-            android:backgroundTint="@color/shadow_white"
-            android:text="@string/symbol_percent"
-            android:textColor="@color/shadow_brown" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/number0"
-            style="@style/MyCoolStyle"
-            android:backgroundTint="@color/cardview_shadow_start_color"
-            android:text="@string/num_0" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/symbol_poi"
-            style="@style/MyCoolStyle"
-            android:backgroundTint="@color/shadow_white"
-            android:text="@string/symbol_point"
-            android:textColor="@color/shadow_brown" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_plus"
-            style="@style/MyCoolStyle"
-            android:layout_marginEnd="@dimen/margin"
+            style="@style/MyCoolStyle_horizontal"
+            android:layout_marginStart="@dimen/margin_start_100"
             android:backgroundTint="@color/shadow_white"
             android:text="@string/symbol_plus"
             android:textColor="@color/shadow_brown" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/symbol_clear"
-            style="@style/MyCoolStyle"
-            android:backgroundTint="@color/shadow_red"
-            android:text="@string/symbol_c" />
+            android:id="@+id/number0"
+            style="@style/MyCoolStyle_horizontal"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="@string/num_0" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/symbol_equ"
-            style="@style/MyCoolStyle"
+            style="@style/MyCoolStyle_horizontal"
             android:layout_width="0dp"
             android:layout_weight="3"
             android:backgroundTint="@color/shadow_white"
             android:text="@string/symbol_equally"
-            android:textColor="@color/shadow_brown"
-            android:layout_marginEnd="@dimen/margin" />
+            android:textColor="@color/shadow_brown" />
 
     </LinearLayout>
+
 </LinearLayout>
 
