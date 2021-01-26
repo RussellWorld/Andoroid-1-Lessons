@@ -1,21 +1,30 @@
 <resources>
-    <string name="app_name">Calculator</string>
-    <string name="num_8">8</string>
-    <string name="num_7">7</string>
-    <string name="num_9">9</string>
-    <string name="symbol_div">/</string>
-    <string name="num_4">4</string>
-    <string name="num_5">5</string>
-    <string name="num_6">6</string>
-    <string name="symbol_mul">*</string>
-    <string name="num_1">1</string>
-    <string name="num_2">2</string>
-    <string name="num_3">3</string>
-    <string name="symbol_minus">-</string>
-    <string name="symbol_percent">%</string>
-    <string name="num_0">0</string>
-    <string name="symbol_point">.</string>
-    <string name="symbol_equally">=</string>
-    <string name="symbol_plus">+</string>
-    <string name="symbol_c">C</string>
+    <string name="app_name">AndroideOneLessons</string>
+    <string name="button_1" translatable="false">1</string>
+    <string name="button_2" translatable="false">2</string>
+    <string name="button_3" translatable="false">3</string>
+    <string name="button_multiply" translatable="false">*</string>
+    <string name="button_minus" translatable="false">-</string>
+    <string name="button_6" translatable="false">6</string>
+    <string name="button_5" translatable="false">5</string>
+    <string name="button_4" translatable="false">4</string>
+    <string name="button_plus" translatable="false">+</string>
+    <string name="button_9" translatable="false">9</string>
+    <string name="button_8" translatable="false">8</string>
+    <string name="button_7" translatable="false">7</string>
+    <string name="button_equal" translatable="false">=</string>
+    <string name="button_comma" translatable="false">.</string>
+    <string name="button_0" translatable="false">0</string>
+    <string name="button_change_sing" translatable="false">+/-</string>
+    <string name="button_clear_all" translatable="false">C</string>
+    <string name="button_clear_one"><![CDATA[<-]]></string>
+    <string name="button_divide" translatable="false">/</string>
+    <string name="defaultText" translatable="false">0</string>
+    <string name="main_theme">Main Theme</string>
+    <string name="psychedelic_theme">Psychedelic Theme</string>
+    <string name="red_theme">Red Theme</string>
+    <string name="choose_theme">Choose theme:</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="button_open_settings">Open settings</string>
 </resources>

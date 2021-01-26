@@ -7,8 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="shadow_red">#4BF46236</color>
-    <color name="shadow_white">#48EBEDF4</color>
-    <color name="symbols_gray_red">#6C6565</color>
-    <color name="shadow_brown">#DA330303</color>
+    <color name="button_color">#7E61FAED</color>
+    <color name="button_color_darker">#77219DD8</color>
+    <color name="button_color_psychedelic">#FFE923</color>
+    <color name="button_color_darker_psychedelic">#D736F4</color>
+    <color name="button_color_dark_theme">#067DAA</color>
+    <color name="button_color_darker_dark_theme">#0F3A4E</color>
+    <color name="button_color_red">#75FA695E</color>
+    <color name="button_color_darker_red">#6FCF1608</color>
+    <color name="text_color_psychedelic">#626C00</color>
+    <color name="text_view_back_color">#3DA4CA</color>
+    <color name="text_view_back_color_dark_theme">#2D86A6</color>
 </resources>

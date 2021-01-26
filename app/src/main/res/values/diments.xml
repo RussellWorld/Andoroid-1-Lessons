@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_22">22sp</dimen>
-    <dimen name="bottom_margin_5">5dp</dimen>
-    <dimen name="inset_0">0dp</dimen>
-    <dimen name="width_0dp">0dp</dimen>
-    <dimen name="inset_5">5dp</dimen>
-    <dimen name="textSize">32sp</dimen>
-    <dimen name="calc_0dp">0dp</dimen>
-    <dimen name="calc_margin_25dp">25dp</dimen>
-    <dimen name="textcalc_25sp">65sp</dimen>
-    <dimen name="margin">10dp</dimen>
-    <dimen name="layout_padding_15">15dp</dimen>
-    <dimen name="textSize18">18sp</dimen>
-    <dimen name="layout_padding_20">20dp</dimen>
+    <dimen name="button_size">25sp</dimen>
+    <dimen name="button_size_land">20sp</dimen>
+    <dimen name="margin_start_end">5dp</dimen>
+    <dimen name="margin_start_end_side_view">17dp</dimen>
+    <dimen name="margin_bottom">5dp</dimen>
+    <dimen name="margin_bottom_land">4dp</dimen>
+    <dimen name="padding_end">2dp</dimen>
 
 </resources>

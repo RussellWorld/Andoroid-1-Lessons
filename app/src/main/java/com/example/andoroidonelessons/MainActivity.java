@@ -1,18 +1,16 @@
 package com.example.andoroidonelessons;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-import java.util.Locale;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private final String keyCalculation = "Calculation";
-    private TextView calculator;
-    private Calculation calculation = new Calculation();
+public class MainActivity extends BaseActivity implements View.OnClickListener {
+    private final static int REQUEST_CODE = 99;
     private Button button0;
     private Button button1;
     private Button button2;
@@ -23,258 +21,268 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button7;
     private Button button8;
     private Button button9;
+    private final String KEY_CALCULATOR = "Calculator";
+    private Calculation calculator = new Calculation();
+    private Button buttonComma;
+    private Button buttonEqual;
+    private Button buttonChangeSing;
+    private Button buttonClearAll;
+    private Button buttonClearOne;
     private Button buttonPlus;
-    private Button buttonMin;
-    private Button buttonMul;
-    private Button buttonDiv;
-    private Button buttonEqu;
-    private Button buttonPoi;
-    private Button buttonPer;
-    private Button buttonClear;
-
+    private Button buttonMultiply;
+    private Button buttonDivide;
+    private Button buttonMinus;
+    private Button buttonOpenSettings;
+    private TextView textViewShowResult;
+    private TextView textViewEnterNumbers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Установим сохранненую тему
+        setTheme(getAppTheme(getThemeChoosen()));
+
         setContentView(R.layout.activity_main);
-        initViews();
+        initView();
     }
 
-    protected void onSaveInstanceState(Bundle saveInstanceState) {
-        super.onSaveInstanceState(saveInstanceState);
-        saveInstanceState.putSerializable(keyCalculation, calculation);
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(KEY_CALCULATOR, calculator);
     }
 
-    protected void onRestoreInstanceState(Bundle saveInstanceState){
-        super.onRestoreInstanceState(saveInstanceState);
-        calculation = (Calculation) saveInstanceState.getSerializable(keyCalculation);
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        calculator = savedInstanceState.getParcelable(KEY_CALCULATOR);
+        setShowResultText();
+    }
 
+    //инициализируем внешний вид
+    private void initView() {
+        findViews();
+        setClickListeners();
+    }
+
+    //устанавливает кликлистнеры
+    private void setClickListeners() {
+        button0.setOnClickListener(this);
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
+        button9.setOnClickListener(this);
+        buttonComma.setOnClickListener(this);
+        buttonEqual.setOnClickListener(this);
+        buttonChangeSing.setOnClickListener(this);
+        buttonClearAll.setOnClickListener(this);
+        buttonClearOne.setOnClickListener(this);
+        buttonMultiply.setOnClickListener(this);
+        buttonDivide.setOnClickListener(this);
+        buttonPlus.setOnClickListener(this);
+        buttonMinus.setOnClickListener(this);
+        buttonOpenSettings.setOnClickListener(this);
+        textViewShowResult.setOnClickListener(this);
+        textViewEnterNumbers.setOnClickListener(this);
+    }
+
+    //находит вью по ID
+    private void findViews() {
+        button0 = findViewById(R.id.button_0);
+        button1 = findViewById(R.id.button_1);
+        button2 = findViewById(R.id.button_2);
+        button3 = findViewById(R.id.button_3);
+        button4 = findViewById(R.id.button_4);
+        button5 = findViewById(R.id.button_5);
+        button6 = findViewById(R.id.button_6);
+        button7 = findViewById(R.id.button_7);
+        button8 = findViewById(R.id.button_8);
+        button9 = findViewById(R.id.button_9);
+        buttonComma = findViewById(R.id.button_comma);
+        buttonEqual = findViewById(R.id.button_equal);
+        buttonChangeSing = findViewById(R.id.button_change_sing);
+        buttonClearAll = findViewById(R.id.button_clear_all);
+        buttonClearOne = findViewById(R.id.button_clear_one);
+        buttonMultiply = findViewById(R.id.button_multiply);
+        buttonDivide = findViewById(R.id.button_divide);
+        buttonPlus = findViewById(R.id.button_plus);
+        buttonMinus = findViewById(R.id.button_minus);
+        buttonOpenSettings = findViewById(R.id.button_open_settings);
+        textViewShowResult = findViewById(R.id.show_result_textview);
+        textViewEnterNumbers = findViewById(R.id.enter_numbers_textview);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.number0:
-                calculation.addNumber(calculation.getNumber0());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_0):
+                setNumber(R.id.button_0);
                 break;
-            case R.id.number1:
-                calculation.addNumber(calculation.getNumber1());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_1):
+                setNumber(R.id.button_1);
                 break;
-            case R.id.number2:
-                calculation.addNumber(calculation.getNumber2());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_2):
+                setNumber(R.id.button_2);
                 break;
-            case R.id.number3:
-                calculation.addNumber(calculation.getNumber3());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_3):
+                setNumber(R.id.button_3);
                 break;
-            case R.id.number4:
-                calculation.addNumber(calculation.getNumber4());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_4):
+                setNumber(R.id.button_4);
                 break;
-            case R.id.number5:
-                calculation.addNumber(calculation.getNumber5());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_5):
+                setNumber(R.id.button_5);
                 break;
-            case R.id.number6:
-                calculation.addNumber(calculation.getNumber6());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_6):
+                setNumber(R.id.button_6);
                 break;
-            case R.id.number7:
-                calculation.addNumber(calculation.getNumber7());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_7):
+                setNumber(R.id.button_7);
                 break;
-            case R.id.number8:
-                calculation.addNumber(calculation.getNumber8());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_8):
+                setNumber(R.id.button_8);
                 break;
-            case R.id.number9:
-                calculation.addNumber(calculation.getNumber9());
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_9):
+                setNumber(R.id.button_9);
                 break;
-            case R.id.symbol_poi:
-                calculation.addNumber(calculation.getSymbolPoi());
-                setTextCalculator(calculation.getNumber());
-                blockButtonPoint(calculation.counterPoints());
+            case (R.id.button_comma):
+                setComma();
                 break;
-            case R.id.symbol_plus:
-                blockButtonPoint(false);
-                calculation.createFirstAndSecondNumber();
-                calculation.chooseSymbol(calculation.getSymbolPlus());
+            case (R.id.button_equal):
+                setEqual();
                 break;
-            case R.id.symbol_min:
-                blockButtonPoint(false);
-                calculation.createFirstAndSecondNumber();
-                calculation.chooseSymbol(calculation.getSymbolMin());
+            case (R.id.button_change_sing):
+                setChangeSing();
                 break;
-            case R.id.symbol_mul:
-                blockButtonPoint(false);
-                calculation.createFirstAndSecondNumber();
-                calculation.chooseSymbol(calculation.getSymbolMul());
+            case (R.id.button_clear_all):
+                cleatAll();
                 break;
-            case R.id.symbol_div:
-                blockButtonPoint(false);
-                calculation.createFirstAndSecondNumber();
-                calculation.chooseSymbol(calculation.getSymbolDiv());
+            case (R.id.button_clear_one):
+                clearOne();
                 break;
-            case R.id.symbol_equ:
-                calculation.createFirstAndSecondNumber();
-                calculation.result();
-                calculation.showResult();
-                setTextCalculator(calculation.getNumber());
-                if (calculation.getNumber().equals(calculation.getError0())) {
-                    blockButtons(false);
-                }
-                blockButtonPoint(calculation.counterPoints());
+            case (R.id.button_multiply):
+                setSing(R.id.button_multiply);
                 break;
-            case R.id.symbol_clear:
-                blockButtons(true); //разблокировка кнопок, если были какие-то заблокированы
-                calculation.clearCalculator();
-                setTextCalculator(calculation.getNumber());
+            case (R.id.button_divide):
+                setSing(R.id.button_divide);
+                break;
+            case (R.id.button_plus):
+                setSing(R.id.button_plus);
+                break;
+            case (R.id.button_minus):
+                setSing(R.id.button_minus);
+                break;
+            case (R.id.button_open_settings):
+                openSettings();
                 break;
         }
     }
-
-    private void blockButtons(boolean block) {
-        button0.setEnabled(block);
-        button1.setEnabled(block);
-        button2.setEnabled(block);
-        button3.setEnabled(block);
-        button4.setEnabled(block);
-        button5.setEnabled(block);
-        button6.setEnabled(block);
-        button7.setEnabled(block);
-        button8.setEnabled(block);
-        button9.setEnabled(block);
-        buttonPoi.setEnabled(block);
-        buttonPer.setEnabled(block);
-        buttonPlus.setEnabled(block);
-        buttonMin.setEnabled(block);
-        buttonMul.setEnabled(block);
-        buttonDiv.setEnabled(block);
-        buttonEqu.setEnabled(block);
+    //Откроем настройки
+    private void openSettings() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivityForResult(intent, REQUEST_CODE);
     }
 
-    private void blockButtonPoint(boolean block) {
-        buttonPoi.setEnabled(!block);
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode != REQUEST_CODE) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+        if (resultCode == RESULT_OK) {
+            //Пересоздаем активность
+            recreate();
+        }
     }
 
-    private void initViews() {
-        calculator = findViewById(R.id.calc);
-        initButton0();
-        initButton1();
-        initButton2();
-        initButton3();
-        initButton4();
-        initButton5();
-        initButton6();
-        initButton7();
-        initButton8();
-        initButton9();
-        initButtonPlus();
-        initButtonMinus();
-        initButtonMultiply();
-        initButtonDivision();
-        initButtonEqually();
-        initButtonPoint();
-        initButtonPercent();
-        initButtonClear();
+    private void setShowResultText() {
+        textViewShowResult.setText(calculator.getStringResult());
+        textViewEnterNumbers.setText(calculator.getStringFirstNumber());
     }
 
-    private void setTextCalculator(String number) {
-        calculator.setText(String.format(Locale.getDefault(), "%s", number));
+    private String getViewText(int id) {
+        if (id == R.id.button_0) {
+            return (String) button0.getText();
+        } else if (id == R.id.button_1) {
+            return (String) button1.getText();
+
+        } else if (id == R.id.button_2) {
+            return (String) button2.getText();
+
+        } else if (id == R.id.button_3) {
+            return (String) button3.getText();
+
+        } else if (id == R.id.button_4) {
+            return (String) button4.getText();
+
+        } else if (id == R.id.button_5) {
+            return (String) button5.getText();
+
+        } else if (id == R.id.button_6) {
+            return (String) button6.getText();
+
+        } else if (id == R.id.button_7) {
+            return (String) button7.getText();
+
+        } else if (id == R.id.button_8) {
+            return (String) button8.getText();
+
+        } else if (id == R.id.button_9) {
+            return (String) button9.getText();
+
+        } else if (id == R.id.button_multiply) {
+            return (String) buttonMultiply.getText();
+
+        } else if (id == R.id.button_divide) {
+
+            return (String) buttonDivide.getText();
+        } else if (id == R.id.button_plus) {
+            return (String) buttonPlus.getText();
+
+        } else if (id == R.id.button_minus) {
+            return (String) buttonMinus.getText();
+        } else {
+            return "";
+        }
     }
 
-    private void initButton0() {
-        button0 = findViewById(R.id.number0);
-        button0.setOnClickListener(this);
+    private void setNumber(int buttonId) {
+        calculator.setNumber(getViewText(buttonId));
+        setShowResultText();
     }
 
-    private void initButton1() {
-        button1 = findViewById(R.id.number1);
-        button1.setOnClickListener(this);
+    private void setComma() {
+        calculator.setComma(true);
+        setShowResultText();
     }
 
-    private void initButton2() {
-        button2 = findViewById(R.id.number2);
-        button2.setOnClickListener(this);
+    private void setEqual() {
+        calculator.setEqual();
+        setShowResultText();
     }
 
-    private void initButton3() {
-        button3 = findViewById(R.id.number3);
-        button3.setOnClickListener(this);
+    private void setChangeSing() {
+        calculator.setChangeSing();
+        setShowResultText();
     }
 
-    private void initButton4() {
-        button4 = findViewById(R.id.number4);
-        button4.setOnClickListener(this);
+    private void cleatAll() {
+        calculator.cleatAll();
+        setShowResultText();
     }
 
-    private void initButton5() {
-        button5 = findViewById(R.id.number5);
-        button5.setOnClickListener(this);
+    private void clearOne() {
+        calculator.clearOne();
+        setShowResultText();
     }
 
-    private void initButton6() {
-        button6 = findViewById(R.id.number6);
-        button6.setOnClickListener(this);
-    }
-
-    private void initButton7() {
-        button7 = findViewById(R.id.number7);
-        button7.setOnClickListener(this);
-    }
-
-    private void initButton8() {
-        button8 = findViewById(R.id.number8);
-        button8.setOnClickListener(this);
-    }
-
-    private void initButton9() {
-        button9 = findViewById(R.id.number9);
-        button9.setOnClickListener(this);
-    }
-
-    private void initButtonPoint() {
-        buttonPoi = findViewById(R.id.symbol_poi);
-        buttonPoi.setOnClickListener(this);
-    }
-
-    private void initButtonPercent() {
-        buttonPer = findViewById(R.id.symbol_per);
-        buttonPer.setOnClickListener(this);
-    }
-
-    private void initButtonClear() {
-        buttonClear = findViewById(R.id.symbol_clear);
-        buttonClear.setOnClickListener(this);
-    }
-
-    private void initButtonPlus() {
-        buttonPlus = findViewById(R.id.symbol_plus);
-        buttonPlus.setOnClickListener(this);
-    }
-
-    private void initButtonMinus() {
-        buttonMin = findViewById(R.id.symbol_min);
-        buttonMin.setOnClickListener(this);
-    }
-
-    private void initButtonMultiply() {
-        buttonMul = findViewById(R.id.symbol_mul);
-        buttonMul.setOnClickListener(this);
-    }
-
-    private void initButtonDivision() {
-        buttonDiv = findViewById(R.id.symbol_div);
-        buttonDiv.setOnClickListener(this);
-    }
-
-    private void initButtonEqually() {
-        buttonEqu = findViewById(R.id.symbol_equ);
-        buttonEqu.setOnClickListener(this);
-
+    private void setSing(int buttonId) {
+        calculator.setSing(getViewText(buttonId));
+        setShowResultText();
     }
 }
