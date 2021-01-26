@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size">25sp</dimen>
+    <dimen name="button_size_land">20sp</dimen>
+    <dimen name="margin_start_end">5dp</dimen>
+    <dimen name="margin_start_end_side_view">17dp</dimen>
+    <dimen name="margin_bottom">5dp</dimen>
+    <dimen name="margin_bottom_land">4dp</dimen>
+    <dimen name="padding_end">2dp</dimen>
+
+</resources>

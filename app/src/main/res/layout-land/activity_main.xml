@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_columnSpan="4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="5"
     android:background="@drawable/background"
+    android:baselineAligned="false"
+
     android:gravity="center"
     android:orientation="horizontal">
 
@@ -14,8 +16,8 @@
 
         <TextView
             android:id="@+id/show_result_textview"
-            style="@style/TextViews"
-            android:layout_marginBottom="@dimen/margin_bottom"
+            style="@style/TextViewsLand"
+            android:layout_marginBottom="@dimen/margin_bottom_land"
             android:gravity="center"
             android:text="@string/defaultText"
             android:textSize="@dimen/text_size40" />
@@ -28,18 +30,17 @@
 
         <TextView
             android:id="@+id/enter_numbers_textview"
-            style="@style/TextViews"
-            android:layout_marginBottom="20dp"
+            style="@style/TextViewsLand"
             android:gravity="center"
             android:text="@string/defaultText"
-            android:textSize="@dimen/text_size40"/>
+            android:textSize="@dimen/text_size40" />
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:theme="@style/Buttons">
+        android:theme="@style/ButtonsLand">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_clear_all"
@@ -54,11 +55,20 @@
             android:id="@+id/button_divide"
             android:text="@string/button_divide" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_multiply"
+            android:text="@string/button_multiply" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_minus"
+            android:text="@string/button_minus" />
     </TableRow>
 
     <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:theme="@style/Buttons">
+        android:theme="@style/ButtonsLand">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
@@ -73,18 +83,6 @@
             android:text="@string/button_3" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_multiply"
-            android:text="@string/button_multiply" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:theme="@style/Buttons">
-
-        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
             android:text="@string/button_4" />
 
@@ -93,20 +91,19 @@
             android:text="@string/button_5" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_6"
-            android:text="@string/button_6" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_minus"
-            android:text="@string/button_minus" />
-
+            android:id="@+id/button_plus"
+            android:text="@string/button_plus" />
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:theme="@style/Buttons">
+        android:theme="@style/ButtonsLand">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_6"
+            android:text="@string/button_6" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
@@ -121,24 +118,19 @@
             android:text="@string/button_9" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_plus"
-            android:text="@string/button_plus" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:theme="@style/Buttons">
-
-        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_change_sing"
             android:text="@string/button_change_sing" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
             android:text="@string/button_0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:theme="@style/ButtonsLand">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_comma"
@@ -146,19 +138,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equal"
+            android:layout_span="2"
             android:text="@string/button_equal" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:theme="@style/Buttons">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_open_settings"
-            android:layout_span="4"
+            android:layout_span="3"
             android:text="@string/button_open_settings" />
     </TableRow>
 

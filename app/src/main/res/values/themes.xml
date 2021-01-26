@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AndoroidOneLessons" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AndroidOneLessons" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryVariant">@color/button_color_darker</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -12,5 +12,53 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Psychedelic" parent="Theme.AndroidOneLessons">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_color_psychedelic</item>
+        <item name="colorPrimaryVariant">@color/button_color_darker_psychedelic</item>
+        <item name="colorOnPrimary">@color/text_color_psychedelic</item>
+    </style>
+
+    <style name="Theme.Red" parent="Theme.AndroidOneLessons">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_color_red</item>
+        <item name="colorPrimaryVariant">@color/button_color_darker_red</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+    <style name="Buttons">
+        <item name="android:layout_marginStart">@dimen/margin_start_end</item>
+        <item name="android:layout_marginEnd">@dimen/margin_start_end</item>
+        <item name="android:textSize">@dimen/button_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Для ландшафтного дизайна переопределяем размер текста -->
+    <style name="ButtonsLand" parent="Buttons">
+        <item name="android:textSize">@dimen/button_size_land</item>
+    </style>
+
+    <style name="TextViews">
+        <item name="android:layout_marginStart">@dimen/margin_start_end_side_view</item>
+        <item name="android:layout_marginEnd">@dimen/margin_start_end_side_view</item>
+        <item name="android:textSize">@dimen/button_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingEnd">@dimen/padding_end</item>
+        <item name="android:layout_span">4</item>
+    </style>
+
+    <style name="TextViewsLand" parent="TextViews">
+        <item name="android:layout_marginStart">@dimen/margin_start_end</item>
+        <item name="android:layout_marginEnd">@dimen/margin_start_end</item>
+        <item name="android:textSize">@dimen/button_size_land</item>
+        <item name="android:paddingEnd">@dimen/padding_end</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_span">6</item>
     </style>
 </resources>
